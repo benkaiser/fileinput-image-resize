@@ -39,8 +39,8 @@ No javascript code to write, no server processing, easy peasy!
 
 1. Clone the repo
 2. Run `npm install`
-3. Run `npm run dev` to run the server in dev mode
-4. Open the demo page by dragging `demo/index.html` into your browser
+3. Run `npm run dev` to run esbuild in watch mode (building the library)
+4. Run the demo server in a separate terminal with `npm run demo`, visit http://localhost:8777/ in your browser to test out an upload.
 
 ### License
 
