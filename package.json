@@ -1,0 +1,19 @@
+{
+  "name": "fileinput-image-resize",
+  "version": "1.0.0",
+  "description": "Resize user submitted images purely with HTML attributes",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --minify --sourcemap --target=es2020 --outfile=dist/bundle.js",
+    "dev": "esbuild src/index.ts --bundle --sourcemap --target=es2020 --outfile=dist/bundle.js --watch",
+    "demo": "node demo/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Kaiser",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.19.6",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

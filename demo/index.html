@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <style>
+      .container {
+        width: 500px;
+        margin: 0 auto;
+      }
+      input[type="file"] {
+        display: block;
+        margin: 0 auto;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+      }
+      input[type="submit"] {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <form method="post" enctype="multipart/form-data">
+      <input name="fileinput" type="file" accept="image/*" data-preview="#preview" data-max-width="500" data-max-height="500" data-quality="90" data-format="webp" data-fit="crop" />
+      <img id="preview" src="" />
+      <input type="submit" value="Upload" />
+    </form>
+  </div>
+</body>
+</html>
