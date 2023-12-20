@@ -8,7 +8,7 @@ No javascript code to write, no server processing, easy peasy!
 1. Reference the CDN script
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/benkaiser/fileinput-image-resize@1.0.0/dist/bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/benkaiser/fileinput-image-resize@1.0.1/dist/bundle.js"></script>
 ```
 
 2. Add a couple attributes to a form image input

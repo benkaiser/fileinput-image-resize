@@ -1,6 +1,6 @@
 {
   "name": "fileinput-image-resize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Resize user submitted images purely with HTML attributes",
   "main": "src/index.ts",
   "scripts": {

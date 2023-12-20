@@ -93,13 +93,21 @@ function onChangeImage(input: HTMLInputElement, event: Event) {
   reader.readAsDataURL(input.files![0]);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function init() {
   document.querySelectorAll('input[data-format], input[data-max-width], input[data-max-height], input[data-quality]').forEach((input) => {
     input.addEventListener('change', (event) => {
       onChangeImage(input as HTMLInputElement, event);
     });
   });
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    init();
+  });
+} else {
+  init();
+}
 
 const observer = new MutationObserver((mutations) => {
   mutations.forEach((mutation) => {
